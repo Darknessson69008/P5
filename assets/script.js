@@ -28,4 +28,11 @@ function ChangeSlide(sens) {
 	document.getElementById("image").src = "./assets/images/slideshow/"+slides[numero].image;
 	document.getElementById("tagLine").innerHTML = slides[numero].tagLine;
 	
+	let dots = document.getElementsByClassName('dot')
+
+	for (let i=0; i<dots.length; i++) {
+		dots[i].classList.remove('dot_selected')
+	}
+	dots[numero].classList.add('dot_selected')
+
 }
