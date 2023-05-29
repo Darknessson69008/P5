@@ -21,10 +21,10 @@ let numero =0;
 
 function ChangeSlide(sens) {
 	numero=numero+sens;
-	if (numero>3) 
+	if (numero>slides.length-1) 
 		numero=0;
 	if (numero<0)
-		numero=3;
+		numero=slides.lenght-1;
 	document.getElementById("image").src = "./assets/images/slideshow/"+slides[numero].image;
 	document.getElementById("tagLine").innerHTML = slides[numero].tagLine;
 	
