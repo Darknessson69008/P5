@@ -24,7 +24,7 @@ function ChangeSlide(sens) {
 	if (numero>slides.length-1) 
 		numero=0;
 	if (numero<0)
-		numero=3;
+		numero=slides.length-1;
 	document.getElementById("image").src = "./assets/images/slideshow/"+slides[numero].image;
 	document.getElementById("tagLine").innerHTML = slides[numero].tagLine;
 	
